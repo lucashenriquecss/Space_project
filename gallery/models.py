@@ -10,7 +10,7 @@ CATEGORY = [
    
 ]
 class Gallery(models.Model):
-    photo = models.ImageField(upload_to='photos/%d/%m/%Y', blank = True)
+    photo = models.ImageField(upload_to='photos/%d/%m/%Y', blank = False)
     title = models.CharField(max_length=200)
     categories = models.CharField(max_length=20,choices=CATEGORY, default='Planeta')
     description = models.TextField(max_length=1000,blank=True)

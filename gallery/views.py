@@ -8,3 +8,7 @@ def index(request):
 def imagem(request,id):
     detail = get_object_or_404(Gallery,pk=id)
     return render(request, 'gallery/imagem.html',{'detail':detail})
+
+
+def forms(request):
+    return render(request,'gallery/postpublic.html')

@@ -4,4 +4,5 @@ from gallery.views import *
 urlpatterns = [
     path('', index, name='index'),
     path('imagem/<int:id>/',imagem, name='imagem'),
+    path('forms',forms, name='forms'),
 ]

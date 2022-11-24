@@ -3,5 +3,5 @@ from django.urls import path
 from gallery.views import *
 urlpatterns = [
     path('', index, name='index'),
-    path('imagem/',imagem, name='imagem'),
+    path('imagem/<int:id>/',imagem, name='imagem'),
 ]
